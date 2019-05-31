@@ -21,6 +21,10 @@
 #include "dsi_panel.h"
 #include "dsi_ctrl_hw.h"
 
+#ifdef CONFIG_KLAPSE
+#include <linux/klapse.h>
+#endif
+
 #define DSI_PANEL_DEFAULT_LABEL  "Default dsi panel"
 
 #define DEFAULT_MDP_TRANSFER_TIME 14000
