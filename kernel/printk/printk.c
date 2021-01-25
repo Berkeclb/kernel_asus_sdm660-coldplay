@@ -2163,6 +2163,9 @@ static int __init console_setup(char *str)
 	char *s, *options, *brl_options = NULL;
 	int idx;
 
+	if (str[0] == 0)
+		return 1;
+
 #ifndef ASUS_USER_BUILD
 #ifdef CONFIG_BOOTUARTDBG
 	if (!g_bootdbguart_y) {
