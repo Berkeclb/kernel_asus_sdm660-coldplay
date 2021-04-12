@@ -4,6 +4,9 @@
 
 # Each configuration option enables a list of files.
 
+subdir-ccflags-y := \
+    -fdata-sections -ffunction-sections -finline-functions -ftree-vectorize -funroll-loops
+
 obj-y				+= core/
 
 obj-$(CONFIG_EXYNOS_VIDEO)     += exynos/
